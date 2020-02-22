@@ -1,0 +1,8 @@
+module hellocorba
+{
+  interface Hello
+  {
+  string sayHello();
+  oneway void shutdown();
+  };
+};

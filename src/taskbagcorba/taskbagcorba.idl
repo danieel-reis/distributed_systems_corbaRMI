@@ -1,0 +1,16 @@
+module taskbagcorba
+{
+  struct Tupla{
+		String chave;
+		int valor;
+	} ;
+
+	interface taskbag {
+		readonly attribute long numberOfTasks;
+		void PairIn (in Key key, in Value value);
+		void PairOut (in Key key, in Value value);
+		void readPair (in Key key, in Value value);
+	};
+
+	
+};
